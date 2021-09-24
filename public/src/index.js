@@ -1,6 +1,7 @@
 'use strict'
 
 let entradaDatos = prompt('Introduce un nia o un módulo')
+
 if(entradaDatos===""){
     console.log('Debes de introducir algo')
 }else{
@@ -29,13 +30,13 @@ if(entradaDatos===""){
         }
     }
     let alumnosOrdenadosPorApellido = ordenaAlumnosPorApellido(datosAlumnos)
-    let listaNombresAlumnosOrdenadorPorApellido= alumnosOrdenadosPorApellido.map((item) => item.alumno.nombre+' '+item.alumno.apellido)
+    let listaNombresAlumnosPorApellido= alumnosOrdenadosPorApellido.map((item) => item.alumno.nombre+' '+item.alumno.apellido)
     console.log('La lista alfabética de alumnos es')
-    console.log(listaNombresAlumnosOrdenadorPorApellido)
+    console.log(listaNombresAlumnosPorApellido)
     let alumnosOrdenadosPorNia = ordenaAlumnosPorNia(datosAlumnos)
-    let listaNombresAlumnosOrdenadorPorNia= alumnosOrdenadosPorNia.map((item) => item.alumno.nombre+' '+item.alumno.apellido)
+    let listaNombresAlumnosPorNia= alumnosOrdenadosPorNia.map((item) => item.alumno.nombre+' '+item.alumno.apellido)
     console.log('La lista de alumnos por nia es ')
-    console.log(listaNombresAlumnosOrdenadorPorNia)
+    console.log(listaNombresAlumnosPorNia)
     let alumnosSuspensos = alumnosConSuspensos(datosAlumnos)
     console.log('Los alumnos con algun módulo suspenso son')
     console.log(alumnosSuspensos)
